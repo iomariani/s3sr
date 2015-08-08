@@ -1,0 +1,5 @@
+delegates ChangeVersion(int i);
+delegate void ChangeFile(string FileName);
+delegate void ChangeKey(uint Type, uint Group, ulong Instance);
+delegate void ChangeInstruction(int LineReference, bool Processed, string Error);
+delegate void AddOBJDInstruction

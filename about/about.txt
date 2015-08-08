@@ -1,0 +1,66 @@
+s3sr (Scripter)
+
+- ABOUT
+
+  Using a Custom Script (*.s3sr) this application will attempt to read the Game Resources
+    and apply the Script specified attribute(s).
+
+  After reading and modifying its attribute(s), the specified resource(s) will be exported to
+    a default replacement package, in which will be replaced by the game once readen.
+
+  -  Current Release: Alpha, for purpose of testing your own custom scripts.
+
+    - S3RC
+
+      Integration with s3rc to decrypt encryted DBPP packages.
+      User will be prompted before doing so.
+
+
+- PURPOSE
+
+  With updates on OBJD/CASP structures made by the game developers, every default replacement package
+    that carries those type of resources become unusable and might cause problems to your game
+    when they have different structures.
+  The purpose of this application is exactly to avoid such problem as it will extract from the origianl package.
+  Whatever structure the resource is built in, however in case of such,
+    the s3pi libraries that takes care of extracting the resources need to be updated as well.
+
+  Since only those need to update, there's no need to remake all the work.
+  That's where this application comes into place.
+
+  DO NOT share the resulting package of a ran script.
+  It breaks the exact purpose of this application.
+  You should share the script for it instead.
+
+
+- CREDITS
+
+  Microsoft, Visual Studio
+  Peter L. Jones, S3PI
+  Pescado, s3rc
+
+- SPECIAL THANKS
+
+  A special thanks for Peter for providing his amazing library. And all time he spent on it.
+  And to all developers who contribute to the community to be what it is today.
+  As well Anach for offering his idea and helping through all the time this application was developed.
+
+
+- LICENSE
+
+  This application is licensed under GNU GENERAL PUBLIC LICENSE.
+  By using or modifying this application, you are and must agree with it's terms.
+  http://www.gnu.org/licenses/gpl-3.0.txt
+
+
+- POLICY
+
+  My Policy: http://awtmk.blogspot.com/p/policy.html
+
+
+
+For Technical Help, Source Code, or other Applications/Tools,
+
+  visit my Blog
+    @
+      http://awtmk.blogspot.com/

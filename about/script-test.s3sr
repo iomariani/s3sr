@@ -1,0 +1,32 @@
+::Base Game
+[BASE]
+{this Key Will Be Presented in the Output Package of the following instruction}
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+::This instruction will not, since no key specified before the Instruction:
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+
+::World Adventures
+[EP01]
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+
+::High-End Loft Stuff
+[SP01]
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+
+::Ambitions
+[EP02]
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+
+::Fast Lane Stuff
+[SP02]
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+
+::Late Night
+[EP03]
+OBJD Instance:0x00000000000005C8 RoomCategoryFlags:0x00000006 BuildCategoryFlags:0x00000080
+
+::Store
+[STORE]
+::null
+
+::This is just base format, most are non existent except for BASE

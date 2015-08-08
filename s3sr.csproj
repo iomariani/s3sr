@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E3C021B-9DEE-4FA5-AC98-3DADB8C2959B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mktm.ts3tools.s3sr</RootNamespace>
+    <AssemblyName>s3sr</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icons\app\s3sr.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <StartupObject>mktm.ts3tools.s3sr.main</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Resources\s3sr.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="s3pi, Version=1011.6.19.34947, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Resources\s3pi\s3pi.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\Settings.cs" />
+    <Compile Include="src\parser\Catalog.cs" />
+    <Compile Include="src\delegates\ScriptProcessor.cs" />
+    <Compile Include="src\Versionizer.cs" />
+    <Compile Include="src\utils\ExceptionReport.cs" />
+    <Compile Include="src\utils\Extension.cs" />
+    <Compile Include="src\utils\FileUtil.cs" />
+    <Compile Include="src\parser\Parser.cs" />
+    <Compile Include="src\utils\Updater.cs" />
+    <Compile Include="src\parser\Stencils.cs" />
+    <Compile Include="src\forms\frmScriptProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\frmScriptProcess.Designer.cs">
+      <DependentUpon>frmScriptProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\frmUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\frmUpdate.Designer.cs">
+      <DependentUpon>frmUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\main.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\forms\frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\frmAbout.designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="src\forms\frmGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="src\forms\frmGUI.designer.cs">
+      <DependentUpon>frmGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\parser\Script.cs" />
+    <EmbeddedResource Include="src\forms\frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\frmGUI.resx">
+      <DependentUpon>frmGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\frmScriptProcess.resx">
+      <DependentUpon>frmScriptProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="src\forms\frmUpdate.resx">
+      <DependentUpon>frmUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\s3sr.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gplv3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\app\s3sr.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\help.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\plumbob_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\store_icon_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3EP01_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3EP02_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3EP03_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3EP04_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3EP05_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3EP06_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3SP01_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3SP02_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3SP03_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3SP04_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\ts3\Sims3SP05_16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons\app\s3sr_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sims3EP06_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

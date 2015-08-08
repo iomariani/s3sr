@@ -1,0 +1,79 @@
+s3sr (Scripter)
+
+- CHANGE LOG
+
+  v0.0.8.7 [2010-11-28]
+    * Beta Release
+
+  v0.0.8.9 [2010-12-12]
+    * Alpha Release
+    * Update Checker
+
+  v0.0.9.2 [2010-12-16]
+    * Update Checker Remade to Use SVN
+    * Fixed s3rc location path
+    * BASE Paths will now load properly
+    * Added New Settings
+      * Decrypt Store Content
+      * Check for Updates
+
+  v0.0.9.27 [2011-01-21]
+    * s3pi rev. 642 (2010-12-27)
+    * Fixed exporting of resources in newest s3pi
+    * Added New Attributes
+      * OBJD: Price
+      * CASP: SortingPriority
+    * Removal of Attributes
+      * OBJD: isWorldEditable
+      * OBJD: materialGrouping1
+      * OBJD: materialGrouping2
+    * Removal of string Attributes (so far, useless)
+
+  v0.0.9.3012 [2011-03-20]
+    * s3pi rev. 677 (2011-02-20)
+    * Support for SP03 (Outdoor Living Stuff)
+    * Support for Steam Version
+    * Fix on Script Reading (String-Match Occurrence)
+    * Fix for French OS Culture Language
+    * New Attributes:
+      * OBJD: CommonBlock.FireType
+      * OBJD: CommonBlock.BuildBuyProductStatusFlags
+      * OBJD: CommonBlock.isScriptEnabled
+      * OBJD: CommonBlock.IsVisibleInWorldBuilder
+
+  v0.0.9.3083 [2011-06-26]
+    * s3pi 11-0603-2119
+    * Support for EP04 (Generations)
+    * Sleep after Attempt to Decrypt
+    * OBJK Handling
+      * ScriptClass
+    * Feature "Script Testing"
+      * Check Duplicated Script lines
+      * Check Duplicated Script lines by Instance
+
+  v0.0.9.3085 [2011-07-01]
+    * s3pi 11-0626-1914
+    * Fixed a problem where OBJK could not be identified as resource
+    * NameMapResource verifies if an Instance was added before, in order to add new KEY reference.
+
+  v0.0.9.3089 [2011-07-17]
+    * s3pi 11-0710-1201
+    * Fixed EP04 Package Path Parsing
+    * Fixed a problem where users who don't own specific EP or SP not able to read registry settings;
+
+  v0.0.9.3092 [2011-07-28]
+    * s3pi 11-0724-2144
+    * Changed application namespace
+    * Support for SP04 (Town Life Stuff)
+    * Fix for DBPP decrypt temp storage
+
+  v0.0.10.0 [2011-]
+    * Code Revision/Cleanup
+    * s3pi 
+    * New Attributes:
+      * OBJD: CommonBlock.UISortPriority
+      * OBJD: Stencils [beta]
+    * Support for EP05 (Pets)
+    * Support for SP05 (Master Suite Stuff)
+    * Support for EP06 (Showtime)
+    * Dynamically created radios for Game Versions

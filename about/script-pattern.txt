@@ -1,0 +1,10 @@
+<VERSION>:         BASE | EP01 | SP01 | EP02 | SP02 | EP03 | SP03 | EP04 | SP04 | EP05 | SP05 | EP06 | STORE | CUSTOM
+<keyName>:         IF any, creates a _KEY indexed to current <Instance>
+<ResourceType>:    OBJD, OBJK or CASP
+<Attribute>:       Attribute Name, see "attributes.txt" for list
+<Value>:           Represented in specific format, the new value (See "attributes.txt" for format)
+
+[<VERSION>]
+:: This is a Comment Line, which is identified with two colons at the beginning of the line
+{<keyName>}
+<ResourceType> Group:<Value> Instance:<Value> <Attribute>:<Value>

@@ -1,0 +1,54 @@
+- PATTERN
+
+  bool		=	1 or 0
+  uint		=	0x00000000
+  ulong		=	0x0000000000000000
+  float		=	0.0
+  stencil	=	uint;uint;int|uint;uint;int[|uint;uint;int][...]
+			replace_with_instance|current_instance|stencil_id
+
+- IDENTIFIER
+
+  uint		ResourceType
+  uint		ResourceGroup
+  ulong		Instance
+
+
+- OBJD
+
+  bool		isStealable
+  bool		isReposessable
+  uint		objectTypeFlags
+  uint		wallPlacementFlags
+  uint		movementFlags
+  uint		cutoutTilesPerLevel
+  uint		levels
+  uint		ambienceTypeHash
+  uint		roomCategoryFlags
+  uint		functionCategoryFlags
+  ulong		functionSubCategoryFlags
+  ulong		roomSubCategoryFlags
+  uint		buildCategoryFlags
+  uint		slotPlacementFlags
+  uint		moodletGiven
+  int		moodletScore
+  float		price
+  uint		FireType
+  uint		BuildBuyProductStatusFlags
+  bool		isScriptEnabled
+  bool		isVisibleInWorldBuilder
+  stencil	AddStencils
+  uint		UISortPrioirty
+
+
+- OBJK
+
+  string	ScriptClass
+
+
+- CASP
+
+  uint		Clothing
+  uint		AgeGender
+  uint		ClothingCategory
+  float		SortingPriority
